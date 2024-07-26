@@ -1,0 +1,371 @@
+.contaner {
+    /* max-width: 1259px; */
+    width: 100%;
+    height: 900px;
+    /* height: 100%; */
+    margin: auto;
+    /* background-color: aqua; */
+    position: relative;
+}
+
+.contaner .image{
+    position: absolute;
+    left: 0;
+    /* top: -90px; */
+    /* margin-top: 32px; */
+    border-radius:0% 96% 70% 0% / 33% 0% 100% 33% ;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    margin-left: 30%;
+    transition: .8s all ease-in-out;
+
+}
+
+.mainTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainimg {
+    width: 80px;
+    height: 80px;
+}
+.mainimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* .mainTitle span{
+  
+    background-color: aqua;
+} */
+
+.TextHead {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.TextHead span:first-child {
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 71.1px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+
+}
+
+.TextHead span:last-child {
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 24.88px;
+    letter-spacing: 12px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+
+
+}
+
+.ButtonExport {
+    margin-top: 40px;
+}
+.ButtonExport button{
+    width: 167px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 36px;
+    color: var(--wight-color-text);
+    text-transform: capitalize;
+}
+
+
+.TextLorem h1:nth-child(1) {
+    font-weight: 200;
+    font-size: 96px;
+    line-height: 89.5px;
+    align-items: center;
+    text-transform: capitalize;
+    color: var(--dark-color-text);
+}
+.TextLorem h1:nth-child(2) {
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 89.5px;
+    align-items: center;
+    text-transform: capitalize;
+    color: var(--dark-color-text);
+
+}
+.TextLorem p{
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 2rem;
+    width: 550px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25.5px;
+    align-items: center;
+    text-transform: capitalize;
+    color: var(--dark-color-text);
+
+}
+.ButtonHelpme button{
+    width: 280px;
+    height: 86px;
+    border-radius: 71px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+
+/* media query */
+@media only screen and (max-width: 900px) {
+    .mainSection {
+        transition: .8s all ease-in-out;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        position: relative;
+        margin-left: 42%;
+    }
+    .TextHead span:first-child {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 71.1px;
+        text-transform: capitalize;
+        color: var(--primary-color);
+    
+    }
+    .TextHead span:last-child {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 10.88px;
+        letter-spacing: 6px;
+        text-transform: capitalize;
+        color: var(--primary-color);
+    
+    
+    }
+    .ButtonExport button{
+        width: 157px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 36px;
+        color: var(--wight-color-text);
+        text-transform: capitalize;
+    }
+    .TextLorem h1:nth-child(1) {
+        font-weight: 200;
+        font-size: 76px;
+        line-height: 69.5px;
+        align-items: center;
+        text-transform: capitalize;
+        color: var(--dark-color-text);
+    }
+    .TextLorem h1:nth-child(2) {
+        font-weight: 600;
+        font-size: 76px;
+        line-height: 89.5px;
+        align-items: center;
+        text-transform: capitalize;
+        color: var(--dark-color-text);
+    
+    }
+    .TextLorem p{
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-top: 2rem;
+        width: 500px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20.5px;
+        align-items: center;
+        text-transform: capitalize;
+        color: var(--dark-color-text);
+    
+    }
+    .ButtonHelpme button{
+        width: 200px;
+        height: 76px;
+        border-radius: 71px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        align-items: center;
+        text-transform: capitalize;
+    }
+  }
+  /* media query 790px */
+  @media screen and (max-width: 790px) {
+    .mainSection {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        position: relative;
+        margin-left: 10%;
+    }
+    .TextHead span:first-child {
+        font-size: 60px;
+        font-weight: 300;
+        line-height: 71.1px;
+        text-transform: capitalize;
+        color: var(--primary-color);
+    
+    }
+    .TextHead span:last-child {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 24.88px;
+        letter-spacing: 12px;
+        text-transform: capitalize;
+        color: var(--primary-color);
+    
+    
+    }
+    .ButtonExport button{
+        width: 157px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 36px;
+        color: var(--wight-color-text);
+        text-transform: capitalize;
+    }
+    .TextLorem h1:nth-child(1) {
+        font-size: 56px;
+        font-weight: 200;
+        line-height: 49.5px;
+        align-items: center;
+        text-transform: capitalize;
+        color: var(--dark-color-text);
+    }
+    .TextLorem h1:nth-child(2) {
+        font-weight: 500;
+        font-size: 66px;
+        line-height: 89.5px;
+        align-items: center;
+        text-transform: capitalize;
+        color: var(--dark-color-text);
+    
+    }
+    .TextLorem p{
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-top: 2rem;
+        width: 350px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20.5px;
+        align-items: center;
+        text-transform: capitalize;
+        color: var(--dark-color-text);
+    
+    }
+    .ButtonHelpme button{
+        width: 180px;
+        height: 60px;
+        border-radius: 71px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        align-items: center;
+        text-transform: capitalize;
+    }
+  }
+  /* media query 670px */
+  @media screen and (max-width: 670px) {
+    .mainSection {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        position: relative;
+        margin-left: 10%;
+    }
+    .TextHead span:first-child {
+        font-size: 60px;
+        font-weight: 300;
+        line-height: 71.1px;
+        text-transform: capitalize;
+        color: var(--primary-color);
+    
+    }
+    .TextHead span:last-child {
+        font-size: 21px;
+        font-weight: 800;
+        line-height: 24.88px;
+        letter-spacing: 12px;
+        text-transform: capitalize;
+        color: var(--primary-color);
+    
+    
+    }
+    .ButtonExport button{
+        width: 157px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 36px;
+        color: var(--wight-color-text);
+        text-transform: capitalize;
+    }
+    .TextLorem h1:nth-child(1) {
+        font-size: 56px;
+        font-weight: 200;
+        line-height: 49.5px;
+        align-items: center;
+        text-transform: capitalize;
+        color: var(--dark-color-text);
+    }
+    .TextLorem h1:nth-child(2) {
+        font-weight: 500;
+        font-size: 66px;
+        line-height: 89.5px;
+        align-items: center;
+        text-transform: capitalize;
+        color: var(--dark-color-text);
+    
+    }
+    .TextLorem p{
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-top: 2rem;
+        width: 350px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20.5px;
+        align-items: center;
+        text-transform: capitalize;
+        color: var(--dark-color-text);
+    
+    }
+    .ButtonHelpme button{
+        width: 180px;
+        height: 60px;
+        border-radius: 71px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        align-items: center;
+        text-transform: capitalize;
+    }
+  }

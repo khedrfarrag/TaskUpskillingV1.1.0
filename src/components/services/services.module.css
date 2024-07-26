@@ -1,0 +1,216 @@
+
+.contaner {
+    max-width: 1903px;
+    width: 90%;
+    height: 900px;
+    margin:auto;
+    background-color: var(--bg);
+    /* background-color: #E7E7E5; */
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    transition: .8s all ease-in-out;
+
+}
+
+.headerSection {
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 2rem; */
+    transform: translateY(100%);
+}
+
+.headerSection span:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    border: 2px solid var(--primary-color);
+    transform: rotate(-40deg);
+}
+
+.headerSection span:nth-child(2) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    border: 2px solid var(--primary-color);
+    transform: rotate(40deg);
+}
+
+.headerSection span:nth-child(3) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    border: 2px solid var(--primary-color);
+    transform: rotate(40deg);
+}
+
+.headerSection span:nth-child(4) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    border: 2px solid var(--primary-color);
+    transform: rotate(-40deg);
+}
+
+.headerSection h1{
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 89.5px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+
+.mainCard{  
+    width: 385px;
+    height: 504px;
+    border-radius: 30px;
+    margin: 2rem;
+    overflow: hidden;
+    background-color: var(--wight-color-text);
+    transition: .8s all ease-in-out;
+
+}
+.mainCard .mainheaderImg{
+    width: 100%;
+    height: 50%;
+}
+.mainheaderImg img{
+    width: 100%;
+    height: 100%;
+}
+.mainTitle{
+    width: 325px;
+    height: 120px;
+    margin:1.2rem auto;
+
+}
+.mainTitle h1{
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--Footer);
+}
+.mainTitle p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--Footer);
+
+}
+
+.butn button{
+    width: 280px;
+    height: 86px;
+    border-radius: 71px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-transform: capitalize;
+    transform: translateY(-100%);
+        transition: .8s all ease-in-out;
+}
+
+
+/* media query 1336px */
+@media only screen and (max-width: 1336px) {
+    .contaner {
+        max-width: 1903px;
+        width: 90%;
+        height: 100%;
+        margin: 4rem auto;
+        background-color: var(--bg);
+        /* background-color: #E7E7E5; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        transition: .8s all ease-in-out;
+    }
+    .headerSection{
+    transform: translateY(20%);
+        
+    }
+    .contaner .mainCard{  
+        width: 385px;
+        height: 480px;
+        border-radius: 30px;
+        margin: 1rem;
+        overflow: hidden;
+        background-color: var(--wight-color-text);
+        transition: .8s all ease-in-out;
+
+    }
+    .mainTitle{
+        width: 300px;
+        height: 120px;
+        margin:1.2rem auto;
+    
+    }
+    .mainTitle h1{
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 24px;
+        text-align: left;
+        text-transform: capitalize;
+        color: var(--Footer);
+    }
+    .mainTitle p{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        text-transform: capitalize;
+        color: var(--Footer);
+    
+    }
+    .butn button{
+        width: 280px;
+        height: 86px;
+        border-radius: 71px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        text-transform: capitalize;
+        margin-top: 4rem;
+        /* transform: translateY(-10%); */
+    }
+    
+
+   
+}
+
+/* media query 1340px */
+/* @media screen and (max-width: 1340px) {
+    .butn button{
+        width: 280px;
+        height: 86px;
+        border-radius: 71px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+        text-transform: capitalize;
+        margin-top: 1rem;
+        transform: translateY(-10%);
+    }
+    
+} */
+

@@ -1,0 +1,273 @@
+.contaner {
+    max-width: 1903px;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.headerSection {
+    width: 500px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    transform: translateY(100%);
+    transition: all 0.8s ease-in-out;
+}
+
+.headerSection span:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    border: 2px solid var(--primary-color);
+    transform: rotate(-40deg);
+}
+
+.headerSection span:nth-child(2) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    border: 2px solid var(--primary-color);
+    transform: rotate(40deg);
+}
+
+.headerSection span:nth-child(3) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    border: 2px solid var(--primary-color);
+    transform: rotate(40deg);
+}
+
+.headerSection span:nth-child(4) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    border: 2px solid var(--primary-color);
+    transform: rotate(-40deg);
+}
+
+.headerSection h1 {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 89.5px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+
+.mainSecForm {
+    width: 657px;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    transition: .8s all ease-in-out;
+    /* background-color: aqua; */
+
+}
+
+.mainSecForm form {
+    padding-bottom: 5rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    /* background-color: aqua; */
+}
+
+.mainSecForm form input {
+    width: 374px;
+    height: 56px;
+    border-radius: 61px;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    background-color: var(--primary-color);
+    opacity: .8;
+}
+.mainSecForm form label{
+    text-align: start;
+    /* transform: translateY(1000%); */
+    transform: translateX(5%);
+
+}
+
+.Error{
+    color: var(--Error);
+}
+
+.mainSecForm form input::placeholder {
+    color: var(--button-hover-color);
+}
+
+.HeroContactMe {
+    width: 250px;
+    height: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    transform: translateX(40%);
+    transition: .8s all ease-in-out;
+
+}
+
+.HeroContactMe .HeroEmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.HeroContactMe a {
+    text-decoration: none;
+}
+
+.HeroContactMe .HeroPhone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contaner button {
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    width: 168px;
+    height: 56px;
+    border-radius: 61px;
+    border: 3px solid var(--primary-color);
+}
+
+/* media query 782px */
+@media screen and (max-width: 782px) {
+    .contaner {
+        max-width: 1903px;
+        width: 100%;
+        height: 840px;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background-color: var(--wight-color-text);
+    }
+
+    .mainSecForm {
+        width: 557px;
+        height: 370px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+    }
+
+    .mainSecForm form input {
+        width: 374px;
+        height: 56px;
+        border-radius: 61px;
+        outline: none;
+        border: none;
+        padding-left: 20px;
+        background-color: var(--primary-color);
+        opacity: .8;
+    }
+
+    .HeroContactMe {
+        width: 250px;
+        height: 78px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+        transform: translateX(10%);
+        transition: .8s all ease-in-out;
+    }
+
+
+}
+
+/* media query 628px */
+@media screen and (max-width: 628px) {
+
+    .headerSection {
+        width: 300px;
+        height: 100px;
+        margin: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        transform: translateY(100%);
+        transition: .8s all ease-in-out;
+
+    }
+
+    .headerSection h1 {
+        font-size: 54px;
+        font-weight: 900;
+        line-height: 89.5px;
+        text-align: center;
+        color: var(--primary-color);
+        transition: .8s all ease-in-out;
+
+    }
+
+    .mainSecForm {
+        width: 657px;
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+        transition: .8s all ease-in-out;
+    }
+
+
+    .HeroContactMe {
+        width: 250px;
+        height: 78px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        transform: translateY(100%);
+        transition: .8s all ease-in-out;
+
+    }
+
+    .contaner button {
+        position: absolute;
+        left: 35%;
+        bottom: 15%;
+        width: 168px;
+        height: 56px;
+        border-radius: 61px;
+        border: 3px solid var(--primary-color);
+        transition: .8s all ease-in-out;
+    }
+}
